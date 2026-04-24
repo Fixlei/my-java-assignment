@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/employee-management-sys.iml" filepath="$PROJECT_DIR$/employee-management-sys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/employee-management-sys.main.iml" filepath="$PROJECT_DIR$/.idea/modules/employee-management-sys.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/employee-management-sys.test.iml" filepath="$PROJECT_DIR$/.idea/modules/employee-management-sys.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-java-assignment.iml" filepath="$PROJECT_DIR$/my-java-assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parking-lot-system.iml" filepath="$PROJECT_DIR$/parking-lot-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/parking-lot-system.main.iml" filepath="$PROJECT_DIR$/.idea/modules/parking-lot-system.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/parking-lot-system.test.iml" filepath="$PROJECT_DIR$/.idea/modules/parking-lot-system.test.iml" />
+    </modules>
+  </component>
+</project>
