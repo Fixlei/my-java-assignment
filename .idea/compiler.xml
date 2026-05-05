@@ -8,6 +8,9 @@
       <module name="parking-lot-system" target="17" />
       <module name="parking-lot-system.main" target="17" />
       <module name="parking-lot-system.test" target="17" />
+      <module name="time-series-oop" target="17" />
+      <module name="time-series-oop.main" target="17" />
+      <module name="time-series-oop.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
