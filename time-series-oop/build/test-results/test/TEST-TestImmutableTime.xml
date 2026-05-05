@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestImmutableTime" tests="13" skipped="0" failures="1" errors="0" timestamp="2026-05-05T18:39:26.736Z" hostname="DESKTOP-QQQ2CQI" time="0.107">
+<testsuite name="TestImmutableTime" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-05T19:42:30.358Z" hostname="DESKTOP-QQQ2CQI" time="0.034">
   <properties/>
-  <testcase name="testSecondOfDayMaxTime()" classname="TestImmutableTime" time="0.039"/>
-  <testcase name="testToSecondOfDayMidnight()" classname="TestImmutableTime" time="0.004"/>
-  <testcase name="testMidnightfactory()" classname="TestImmutableTime" time="0.004"/>
-  <testcase name="testNoonFactory()" classname="TestImmutableTime" time="0.001"/>
-  <testcase name="testWithHourFailureDoesNotAffectOriginal()" classname="TestImmutableTime" time="0.002"/>
-  <testcase name="testWithHourDoesNotMutateOriginal()" classname="TestImmutableTime" time="0.002"/>
-  <testcase name="testChainWithMethods()" classname="TestImmutableTime" time="0.002"/>
-  <testcase name="testSecondOfDayOneHour()" classname="TestImmutableTime" time="0.017">
-    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;3600&gt; but was: &lt;0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;3600&gt; but was: &lt;0&gt;
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at app//org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
-	at app//TestImmutableTime.testSecondOfDayOneHour(TestImmutableTime.java:96)
-	at java.base@17.0.2/java.lang.reflect.Method.invoke(Method.java:568)
-	at java.base@17.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base@17.0.2/java.util.ArrayList.forEach(ArrayList.java:1511)
-</failure>
-  </testcase>
-  <testcase name="testSecondDayOfMidnight()" classname="TestImmutableTime" time="0.001"/>
-  <testcase name="testWithHourReturnsNewObject()" classname="TestImmutableTime" time="0.003"/>
-  <testcase name="testStaticFactoryOf()" classname="TestImmutableTime" time="0.001"/>
-  <testcase name="testWithHourPreservesOtherFields()" classname="TestImmutableTime" time="0.001"/>
-  <testcase name="testWithHourValidatesInput()" classname="TestImmutableTime" time="0.004"/>
+  <testcase name="testStaticFactoryOf()" classname="TestImmutableTime" time="0.034"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
