@@ -59,11 +59,73 @@ public class TestImmutableTime {
   }
 
   /* -- static factory methods -- */
-
   @Test
   public void testStaticFactoryOf() {
     Time time = new Time(10, 20,0);
-   // Time timeNew = Time.of(10, 20, 30);
+   Time timeNew = Time.createTime(10, 20, 30);
     assertEquals(10, time.getHour());
   }
+  @Test
+  public void testMidnightfactory(){
+    //class name calls static method.
+    Time midnight = Time.midnight();
+    assertTrue((new Time(0,0,0)).equals(midnight));
+    assertEquals("00:00:00", midnight.toString());
+  }
+
+  @Test
+  public void testNoonFactory(){
+    Time time = Time.noon();
+    assertEquals(Time.noon(), new Time(12,0,0));
+    assertEquals("12:00:00", Time.noon().toString());
+  }
+
+  @Test
+  public void testToSecondOfDayMidnight(){
+    Time time = Time.midnight();
+    assertEquals(Time.midnight(), new Time(0,0,0));
+    assertEquals("00:00:00", Time.midnight().toString());
+  }
+
+  @Test
+  public void testSecondDayOfMidnight(){
+    assertEquals(0, Time.midnight().toSecondOfDay());
+  }
+  @Test
+  public void testSecondOfDayOneHour(){
+    assertEquals(3600, Time.midnight().toSecondOfDay());
+  }
+  @Test
+  public void testSecondOfDayMaxTime(){
+    assertEquals(86399, (new Time(23,59,59)).toSecondOfDay());
+  }@Test
+  public void testChainWithMethods(){
+    Time result = Time.createTime(10,29,30).withHour(0).withMinute(0).withSecond(0);
+
+    assertEquals(Time.midnight(), result);
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

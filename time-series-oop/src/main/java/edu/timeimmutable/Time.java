@@ -30,21 +30,21 @@ public final class Time implements Comparable<Time>{
     if (hour < 0 || hour > 23) {
       throw new IllegalArgumentException("hour must be between 0 and 23");
     }
-    return new Time(this.hour, this.minute, this.second);
+    return new Time(hour, this.minute, this.second);
   }
 
   public Time withMinute(int minute) {
     if (minute < 0 || minute > 59) {
       throw new IllegalArgumentException("minute must be between 0 and 59");
     }
-    return new Time(this.hour, this.minute, this.second);
+    return new Time(this.hour, minute, this.second);
   }
 
   public Time withSecond(int second) {
     if (second < 0 || second > 59) {
       throw new IllegalArgumentException("second must be between 0 and 59");
     }
-    return new Time(this.hour, this.minute, this.second);
+    return new Time(this.hour, this.minute, second);
   }
 
   public int getHour() {
@@ -60,11 +60,11 @@ public final class Time implements Comparable<Time>{
   }
 
   //static methods belong to class not object's
-  public static Time midnight(int hour, int minute, int second) {
+  public static Time midnight() {
     return new Time(0, 0, 0); // copy object
   }
 
-  public static Time noon(int hour, int minute, int second) {
+  public static Time noon() {
     return new Time(12, 0, 0); // copy object
   }
 
@@ -75,5 +75,21 @@ public final class Time implements Comparable<Time>{
   @Override
   public int compareTo(Time o) {
     return Integer.compare(this.toSecondOfDay(), o.toSecondOfDay());
+  }
+  @Override
+  public boolean equals(Object other){
+    if (this ==other) return true;
+    if (other == null) return false;
+    if(!(other instanceof Time)) return false;
+
+    Time otherTime = (Time)other;
+    return this.hour == ((Time) other).hour &&
+        this.minute == ((Time) other).minute &&
+        this.second == ((Time) other).second;
+  }
+
+  @Override
+  public String toString(){
+    return String.format("%02d:%02d:%02d", this.hour, this.minute, this.second);
   }
 }
