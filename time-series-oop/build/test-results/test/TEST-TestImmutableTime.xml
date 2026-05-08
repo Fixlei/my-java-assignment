@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestImmutableTime" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-05T19:42:30.358Z" hostname="DESKTOP-QQQ2CQI" time="0.034">
+<testsuite name="TestImmutableTime" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-08T03:56:37.859Z" hostname="DESKTOP-QQQ2CQI" time="0.043">
   <properties/>
-  <testcase name="testStaticFactoryOf()" classname="TestImmutableTime" time="0.034"/>
+  <testcase name="testWithHourPreservesOtherFields()" classname="TestImmutableTime" time="0.043"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

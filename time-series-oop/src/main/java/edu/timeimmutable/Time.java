@@ -21,7 +21,7 @@ public final class Time implements Comparable<Time>{
     this.second = second;
   }
 
-  public static Time createTime(int hour, int minute, int second) {
+  public static Time of(int hour, int minute, int second) {
     return new Time(hour, minute, second);  // copy object
   }
 
@@ -91,5 +91,16 @@ public final class Time implements Comparable<Time>{
   @Override
   public String toString(){
     return String.format("%02d:%02d:%02d", this.hour, this.minute, this.second);
+  }
+
+  public static Time parse(String text) {
+
+    return Time.parse(text);
+  }
+
+  public String format12Hour() {
+
+
+    return "";
   }
 }

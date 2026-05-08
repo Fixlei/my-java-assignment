@@ -28,7 +28,7 @@ public class TestImmutableTime {
   public void testWithHourPreservesOtherFields() {
     Time originalTime = new Time(10, 20, 30);
     Time newTime = originalTime.withHour(15);
-    assertEquals(10, newTime.getHour());
+    assertEquals(15, newTime.getHour());
     assertEquals(20, newTime.getMinute());
     assertEquals(30, newTime.getSecond());
   }
@@ -59,7 +59,7 @@ public class TestImmutableTime {
   @Test
   public void testStaticFactoryOf() {
     Time time = new Time(10, 20, 30);
-    Time timeNew = Time.createTime(10, 20, 30);
+    Time timeNew = Time.of(10, 20, 30);
     assertEquals(time, timeNew);
   }
 
@@ -103,7 +103,7 @@ public class TestImmutableTime {
 
   @Test
   public void testChainWithMethods() {
-    Time result = Time.createTime(10, 29, 30).withHour(0).withMinute(0).withSecond(0);
+    Time result = Time.of(10, 29, 30).withHour(0).withMinute(0).withSecond(0);
 
     assertEquals(Time.midnight(), result);
   }
