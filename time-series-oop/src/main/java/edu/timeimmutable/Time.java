@@ -1,6 +1,6 @@
 package edu.timeimmutable;
 
-public final class Time implements Comparable<Time>{
+public final class Time implements Comparable<Time> {
 
   private final int hour;
   private final int minute;
@@ -76,25 +76,51 @@ public final class Time implements Comparable<Time>{
   public int compareTo(Time o) {
     return Integer.compare(this.toSecondOfDay(), o.toSecondOfDay());
   }
-  @Override
-  public boolean equals(Object other){
-    if (this ==other) return true;
-    if (other == null) return false;
-    if(!(other instanceof Time)) return false;
 
-    Time otherTime = (Time)other;
+  @Override
+  public boolean equals(Object other) {
+    if (this == other) {
+      return true;
+    }
+    if (other == null) {
+      return false;
+    }
+    if (!(other instanceof Time)) {
+      return false;
+    }
+
+    Time otherTime = (Time) other;
     return this.hour == ((Time) other).hour &&
         this.minute == ((Time) other).minute &&
         this.second == ((Time) other).second;
   }
 
   @Override
-  public String toString(){
+  public String toString() {
     return String.format("%02d:%02d:%02d", this.hour, this.minute, this.second);
   }
 
   public static Time parse(String text) {
+    if (text == null || text.trim().isEmpty()) {
+      throw new IllegalArgumentException("text must not be empty. expected format: HH:MM:SS");
+    }
 
+    String[] parts = text.split(":");
+
+    if (parts.length != 3) {
+      throw new IllegalArgumentException(
+          String.format("Invalid time format: '%s'. Expected format: HH:MM:SS", text)
+      );
+    }
+    try {
+      int hour = Integer.parseInt(parts[0]);
+      int minute = Integer.parseInt(parts[1]);
+      int second = Integer.parseInt(parts[2]);
+    } catch (NumberFormatException e) {
+      throw new IllegalArgumentException(
+          String.format("Time contain non-numeric values: '%s'. Expected format: HH:MM:SS", text)
+      );
+    }
     return Time.parse(text);
   }
 
