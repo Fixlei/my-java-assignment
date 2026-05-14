@@ -11,6 +11,9 @@
       <module name="time-series-oop" target="17" />
       <module name="time-series-oop.main" target="17" />
       <module name="time-series-oop.test" target="17" />
+      <module name="vending-machine-statemachine" target="17" />
+      <module name="vending-machine-statemachine.main" target="17" />
+      <module name="vending-machine-statemachine.test" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -12,6 +12,9 @@
       <module fileurl="file://$PROJECT_DIR$/time-series-oop.iml" filepath="$PROJECT_DIR$/time-series-oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/time-series-oop.main.iml" filepath="$PROJECT_DIR$/.idea/modules/time-series-oop.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/time-series-oop.test.iml" filepath="$PROJECT_DIR$/.idea/modules/time-series-oop.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vending-machine-statemachine.iml" filepath="$PROJECT_DIR$/vending-machine-statemachine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vending-machine-statemachine.main.iml" filepath="$PROJECT_DIR$/.idea/modules/vending-machine-statemachine.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/vending-machine-statemachine.test.iml" filepath="$PROJECT_DIR$/.idea/modules/vending-machine-statemachine.test.iml" />
     </modules>
   </component>
 </project>
